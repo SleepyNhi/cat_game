@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sleepynhi.cat_game.HomepageActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/homepage_header"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0.5"
+        android:translationZ="1dp"
+        android:layout_height="80dp">
+        <Button
+            android:id="@+id/activity_homepage_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/homepage_classify"/>
+        <ImageButton
+            android:id="@+id/activity_play_bt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/play"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_homepage_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homepage_header"
+        android:layout_above="@+id/activity_homepage_nav">
+
+
+        <TextView
+            android:id="@+id/hp_tv"
+            android:translationZ="2dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="Player Info: Attack: Defense: Health:
+undetermined click to hide"
+            android:textSize="23sp"
+            android:visibility="visible"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_homepage_nav"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/activity_homepage_homebt"
+            android:layout_width="0dp"
+            android:text="Home"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"    />
+        <TextView
+            android:id="@+id/activity_homepage_yardbt"
+            android:layout_width="0dp"
+            android:text="Yard"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"  />
+    </LinearLayout>
+</RelativeLayout>

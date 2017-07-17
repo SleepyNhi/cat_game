@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sleepynhi.cat_game.GestureActivity">
+
+    <TextView
+        android:id="@+id/quiztv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/bingotv"
+        android:layout_width="200dp"
+        android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:text="Bingo"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:background="@android:color/holo_blue_bright"/>
+
+
+
+
+</RelativeLayout>

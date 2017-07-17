@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fightbg"
+        >
+
+    <ImageView
+        android:id="@+id/activity_game_player"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:src="@drawable/sol"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/coin"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+
+            />
+        <TextView
+            android:id="@+id/totalgold_tv"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:hint="0"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+
+
+
+    <Button
+        android:id="@+id/activity_gameplay_menu"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Menu"
+        android:layout_alignParentRight="true"
+        android:background="@null"/>
+    </RelativeLayout>
+
+</RelativeLayout>

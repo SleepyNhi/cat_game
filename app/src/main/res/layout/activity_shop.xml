@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sleepynhi.cat_game.ShopActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_shop_menu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <Button
+            android:id="@+id/activity_shop_menubt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/homepage_classify"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/activity_advance_view_pager_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        </android.support.design.widget.TabLayout>
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/activity_advance_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_shop_menu">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="100dp"
+            android:text="GOLD:"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/activity_shop_goldtv"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+</RelativeLayout>
